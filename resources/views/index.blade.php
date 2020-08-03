@@ -1,22 +1,66 @@
+<style>
+    #owl-main .owl-controls .owl-buttons .icon {
+        top: 14px !important;
+    }
 
+    .main-header .top-search-holder .search-area {
+        width: 257% !important;
+        text-align: center;
+        border: 0px #ddd solid !important;
+        webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        margin: 80px -80px 0px 163px !important;
+        background: #fff;
+        border-radius: 999px;
+    }
+
+    .main-header .top-search-holder .search-area .search-field {
+        border: medium none;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+        padding: 13px;
+        width: 81% !important;
+    }
+</style>
 
 @extends('layouts.frontend')
 
 @section('content')
 
-    <div class="body-content outer-top-vs" id="top-banner-and-menu">
+  <div class="body-content outer-top-vs" id="top-banner-and-menu">
   <div class="container">
     <div class="row">
-
+  
         <div id="hero">
           <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-            <div class="item" style="background-image: url(assets/images/sliders/02.jpg);">
+            <div class="item" style="background-image: url({{ asset('app/images/products/p6.jpg') }});">
+
               <div class="container-fluid">
-                <div class="caption bg-color vertical-center text-left">
-                  <div class="slider-header fadeInDown-1">Top Brands 2018</div>
+
+          <!-- /.search-area --> 
+          <!-- ============================================================= SEARCH AREA : END ============================================================= --> 
+                
+                  <div class="caption bg-color vertical-center">
+                    <div class="main-header" style="background: none;">
+                      <div class="top-search-holder"> 
+                          <div class="search-area" style="border-block-end: 0 !important;">
+                            <form>
+                              <div class="control-group">
+                                
+                                <input class="search-field" placeholder="Search here...">
+                                <a class="search-button" href="#"></a> 
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div> 
+
+                  <!-- <div class="slider-header fadeInDown-1">Top Brands 2018</div>
                   <div class="big-text fadeInDown-1">Digital <span class="highlight">Watch</span></div>
-                  <div class="excerpt fadeInDown-2 hidden-xs"> <span>Get 50% off on selected items</span> </div>
-                  <div class="button-holder fadeInDown-3"> <a href="index6c11.html?page=single-product" class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop Now</a> </div>
+                  <div class="excerpt fadeInDown-2 hidden-xs"> <span>Get 50% off on selected items</span> </div> -->
+                  <!-- <div class="button-holder fadeInDown-3"> <a href="index6c11.html?page=single-product" class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop Now</a> </div> -->
                 </div>
                 <!-- /.caption --> 
               </div>
@@ -24,17 +68,29 @@
             </div>
             <!-- /.item -->
             
-            <div class="item" style="background-image: url(assets/images/sliders/01.jpg);">
+            <div class="item" style="background-image: url({{ asset('app/images/products/p3.jpg') }});">
               <div class="container-fluid">
-                <div class="caption bg-color vertical-center text-left">
-                  <div class="slider-header fadeInDown-1">Spring 2018</div>
-                  <div class="big-text fadeInDown-1"> Modern <span class="highlight">Chair</span> </div>
-                  <div class="excerpt fadeInDown-2 hidden-xs"> <span>Nemo enim ipsam voluptatem quia <br> voluptas sit aspernatur.</span> </div>
-                  <div class="button-holder fadeInDown-3"> <a href="index6c11.html?page=single-product" class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop Now</a> </div>
+                <div class="caption bg-color vertical-center">
+                    <div class="main-header" style="background: none;">
+                      <div class="top-search-holder"> 
+                          <div class="search-area" style="border-block-end: 0 !important;">
+                            <form>
+                              <div class="control-group">
+                                
+                                <input class="search-field" placeholder="Search here...">
+                                <a class="search-button" href="#"></a> 
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div> 
+
+                  <!-- <div class="slider-header fadeInDown-1">Top Brands 2018</div>
+                  <div class="big-text fadeInDown-1">Digital <span class="highlight">Watch</span></div>
+                  <div class="excerpt fadeInDown-2 hidden-xs"> <span>Get 50% off on selected items</span> </div> -->
+                  <!-- <div class="button-holder fadeInDown-3"> <a href="index6c11.html?page=single-product" class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop Now</a> </div> -->
                 </div>
-                <!-- /.caption --> 
               </div>
-              <!-- /.container-fluid --> 
             </div>
             <!-- /.item --> 
             
@@ -93,9 +149,9 @@
         </div>
         <!-- /.info-boxes --> 
         
-            <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
+        <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
           <div class="more-info-tab clearfix ">
-            <h3 class="new-product-title pull-left">Recent Products</h3>
+            <h3 class="new-product-title pull-left">Recently Viewed Items</h3>
             <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
               <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">See All</a></li>
               
@@ -110,7 +166,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -152,7 +208,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p2.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -194,7 +250,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p4.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src=" {{ asset('app/images/products/p4.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           
@@ -236,7 +292,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p3.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -278,7 +334,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p30.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p30.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -320,7 +376,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p29.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p29.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -371,7 +427,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p5.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p5.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -413,7 +469,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -455,7 +511,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p7.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p7.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -497,7 +553,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p8.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -539,7 +595,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p9.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -581,7 +637,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p10.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -632,7 +688,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p11.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p11.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -674,7 +730,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p12.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p12.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -716,7 +772,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -758,7 +814,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -800,7 +856,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p15.jpg" alt="image"></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p15.jpg') }}" alt="image"></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -842,7 +898,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -893,7 +949,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -935,7 +991,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -977,7 +1033,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p17.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p17.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1019,7 +1075,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1061,7 +1117,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1103,7 +1159,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1152,7 +1208,7 @@
             </div>
 
             <div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
-          <div class="more-info-tab clearfix ">
+          <div class="more-info-tab clearfix">
             <h3 class="new-product-title pull-left">Popular Products</h3>
             <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
               <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">See All</a></li>
@@ -1168,7 +1224,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1210,7 +1266,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p2.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1252,7 +1308,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p4.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p4.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           
@@ -1294,7 +1350,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p3.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1336,7 +1392,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p30.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p30.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1378,7 +1434,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p29.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p29.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1429,7 +1485,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p5.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p5.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1471,7 +1527,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1513,7 +1569,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p7.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p7.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1555,7 +1611,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p8.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1597,7 +1653,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p9.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1639,7 +1695,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p10.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1690,7 +1746,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p11.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p11.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1732,7 +1788,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p12.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p12.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -1774,7 +1830,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1816,7 +1872,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1858,7 +1914,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p15.jpg" alt="image"></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p15.jpg') }}" alt="image"></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -1900,7 +1956,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1951,7 +2007,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -1993,7 +2049,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2035,7 +2091,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p17.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p17.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -2077,7 +2133,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2119,7 +2175,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2161,7 +2217,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2226,7 +2282,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2268,7 +2324,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p2.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2310,7 +2366,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p4.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p4.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           
@@ -2352,7 +2408,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p3.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -2394,7 +2450,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p30.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p30.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2436,7 +2492,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p29.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p29.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2487,7 +2543,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p5.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p5.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -2529,7 +2585,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2571,7 +2627,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p7.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p7.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -2613,7 +2669,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p8.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2655,7 +2711,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p9.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2697,7 +2753,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p10.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2748,7 +2804,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p11.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p11.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2790,7 +2846,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p12.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p12.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -2832,7 +2888,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -2874,7 +2930,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2916,7 +2972,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p15.jpg" alt="image"></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p15.jpg') }}" alt="image"></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -2958,7 +3014,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3009,7 +3065,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3051,7 +3107,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3093,7 +3149,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p17.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p17.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3135,7 +3191,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3177,7 +3233,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3219,7 +3275,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3284,7 +3340,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3326,7 +3382,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p2.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3368,7 +3424,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p4.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p4.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           
@@ -3410,7 +3466,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p3.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3452,7 +3508,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p30.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p30.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3494,7 +3550,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p29.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p29.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3545,7 +3601,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p5.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p5.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3587,7 +3643,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3629,7 +3685,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p7.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p7.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3671,7 +3727,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p8.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3713,7 +3769,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p9.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3755,7 +3811,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p10.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3806,7 +3862,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p11.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p11.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3848,7 +3904,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p12.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p12.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -3890,7 +3946,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -3932,7 +3988,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -3974,7 +4030,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p15.jpg" alt="image"></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p15.jpg') }}" alt="image"></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -4016,7 +4072,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -4067,7 +4123,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -4109,7 +4165,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p18.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p18.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -4151,7 +4207,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p17.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p17.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag sale"><span>sale</span></div>
@@ -4193,7 +4249,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p16.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p16.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -4235,7 +4291,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p13.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -4277,7 +4333,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="assets/images/products/p14.jpg" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p14.jpg') }}" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag hot"><span>hot</span></div>
@@ -4331,307 +4387,306 @@
     
       
         <!-- ============================================== FEATURED PRODUCTS ============================================== -->
-        <div class="container">
+        <!-- <div class="container">
             <section class="section featured-product wow fadeInUp">
-          <h3 class="section-title">Featured products</h3>
-          <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p5.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                   
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+              <h3 class="section-title">Featured products</h3>
+              <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p5.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                       
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-                   <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                   
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                       <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p2.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                       
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p6.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                    <div class="tag new"><span>new</span></div>
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p6.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/blank.gif" data-echo="assets/images/products/p7.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                  
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/blank.gif') }}" data-echo="{{ asset('app/images/products/p7.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                      
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                    <div class="tag hot"><span>hot</span></div>
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p8.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                  
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p9.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                      
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
+                /.item
                 
-              </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item -->
-            
-            <div class="item item-carousel">
-              <div class="products">
-                <div class="product">
-                  <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a> </div>
-                    <!-- /.image -->
-                    
-                    <div class="tag sale"><span>sale</span></div>
-                  </div>
-                  <!-- /.product-image -->
-                  
-                  <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                    <!-- /.product-price --> 
-                    
-                  </div>
-                  <!-- /.product-info -->
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <ul class="list-unstyled">
-                        <li class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </li>
-                        <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                      </ul>
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image"> <a href="detail.html"><img  src="{{ asset('app/images/products/p10.jpg') }}" alt=""></a> </div>
+                        /.image
+                        
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      /.product-image
+                      
+                      <div class="product-info text-left">
+                        <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
+                        /.product-price 
+                        
+                      </div>
+                      /.product-info
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                              <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                            </li>
+                            <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                            <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                          </ul>
+                        </div>
+                        /.action 
+                      </div>
+                      /.cart 
                     </div>
-                    <!-- /.action --> 
+                    /.product 
+                    
                   </div>
-                  <!-- /.cart --> 
+                  /.products 
                 </div>
-                <!-- /.product --> 
-                
+                /.item 
               </div>
-              <!-- /.products --> 
-            </div>
-            <!-- /.item --> 
-          </div>
-          <!-- /.home-owl-carousel --> 
             </section>
-        </div>
+        </div> -->
         <!-- ============================================== FEATURED PRODUCTS : END ============================================== --> 
 
     </div>

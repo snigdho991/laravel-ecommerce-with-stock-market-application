@@ -1,30 +1,56 @@
-<!-- ============================================== HEADER ============================================== -->
+
+<!-- ============================================== HEADER previous: #59B210 ============================================== -->
+<style type="text/css">
+.js-search {
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  width: 150px;
+  color: #424242;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+  transition: width 0.4s ease;
+  outline: none;
+}
+
+.js-search:focus {
+    width: 455px;
+    /* border-bottom: 1px rgb(2, 158, 116) solid; */
+    border-radius: 0px;
+}
+
+#modified{
+    position: relative;
+    left: -37px;
+    /* color: #8233C5 rgb(2, 158, 116); */
+    top: -2px;
+    font-size: 15px;
+}
+
+</style>
+
+
 <header class="header-style-1"> 
   
-  <!-- ============================================== TOP MENU ============================================== -->
-  <div class="top-bar animate-dropdown">
+  
+  <div class="main-header">
+
     <div class="container">
-      <div class="header-top-inner">
-        <div class="cnt-account">
-          <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
-            <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
-            <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
-            <li><a href="#"><i class="icon fa fa-lock"></i>Login</a></li>
-          </ul>
-        </div>
-        <!-- /.cnt-account -->
+      <div class="top-bar animate-dropdown">       
         
         <div class="cnt-block">
           <ul class="list-unstyled list-inline">
-            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
+            <!-- <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">USD</a></li>
                 <li><a href="#">INR</a></li>
                 <li><a href="#">GBP</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">English </span><b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">English</a></li>
@@ -36,32 +62,36 @@
           <!-- /.list-unstyled --> 
         </div>
         <!-- /.cnt-cart -->
+
+        <div class="cnt-account">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
+            <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
+            <!-- <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
+            <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
+            <li><a href="#"><i class="icon fa fa-lock"></i>Login</a></li> -->
+          </ul>
+        </div>
         <div class="clearfix"></div>
       </div>
-      <!-- /.header-top-inner --> 
-    </div>
-    <!-- /.container --> 
-  </div>
-  <!-- /.header-top --> 
-  <!-- ============================================== TOP MENU : END ============================================== -->
-  <div class="main-header">
-    <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
+
+
+        <div class="logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="home.html"> <img src="assets/images/logo.png" alt="logo"> </a> </div>
+          <div class="logo"> <a href="home.html"> <img src="{{ asset('app/images/logo3.png') }}" alt="logo"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
         
-        <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder"> 
+        <!-- <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder">  -->
           <!-- /.contact-row --> 
           <!-- ============================================================= SEARCH AREA ============================================================= -->
-          <div class="search-area">
+          <!-- <div class="search-area">
             <form style="margin-block-end: 0;">
               <div class="control-group">
                 <ul class="categories-filter animate-dropdown">
-                  <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">Categories <b class="caret"></b></a>
+                  <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">Search By <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu" >
                       <li class="menu-header">Computer</li>
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Clothing</a></li>
@@ -74,15 +104,15 @@
                 <input class="search-field" placeholder="Search here..." />
                 <a class="search-button" href="#" ></a> </div>
             </form>
-          </div>
+          </div> -->
           <!-- /.search-area --> 
-          <!-- ============================================================= SEARCH AREA : END ============================================================= --> </div>
+          <!-- ============================================================= SEARCH AREA : END ============================================================= --> <!-- </div> -->
         <!-- /.top-search-holder -->
         
-        <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row"> 
+        <!-- <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">  -->
           <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
           
-          <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+          <!-- <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
             <div class="items-cart-inner">
               <div class="basket"></div>
               <div class="basket-item-count"><span class="count">2</span></div>
@@ -103,24 +133,24 @@
                     <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
                   </div>
                 </div>
-                <!-- /.cart-item -->
+                /.cart-item
                 <div class="clearfix"></div>
                 <hr>
                 <div class="clearfix cart-total">
                   <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>$600.00</span> </div>
                   <div class="clearfix"></div>
                   <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a> </div>
-                <!-- /.cart-total--> 
+                /.cart-total 
                 
               </li>
             </ul>
-            <!-- /.dropdown-menu--> 
-          </div>
+            /.dropdown-menu 
+          </div> -->
           <!-- /.dropdown-cart --> 
           
           <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> </div>
         <!-- /.top-cart-row --> 
-      </div>
+      <!-- </div> -->
       <!-- /.row --> 
       
     </div>
@@ -130,7 +160,7 @@
   <!-- /.main-header --> 
   
   <!-- ============================================== NAVBAR ============================================== -->
-  <div class="header-nav animate-dropdown">
+  <div class="header-nav animate-dropdown" id="header-hide">
     <div class="container">
       <div class="yamm navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -141,8 +171,8 @@
           <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
             <div class="nav-outer">
               <ul class="nav navbar-nav">
-                <li class="active dropdown yamm-fw"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
-                <li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Clothing</a>
+                <li class="active dropdown yamm-fw" id="hideable"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
+                <li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Browse</a>
                   <ul class="dropdown-menu container">
                     <li>
                       <div class="yamm-content ">
@@ -203,7 +233,7 @@
                           </div>
                           <!-- /.col -->
                           
-                          <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
+                          <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="{{ asset('app/images/banners/top-menu-banner.jpg') }}" alt=""> </div>
                           <!-- /.yamm-content --> 
                         </div>
                       </div>
@@ -211,7 +241,7 @@
                   </ul>
                 </li>
                 <li class="dropdown mega-menu"> 
-                <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Electronics <span class="menu-label hot-menu hidden-xs">hot</span> </a>
+                <a href="category.html"  data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Shop all <!--  <span class="menu-label hot-menu hidden-xs">hot</span> --> </a>
                   <ul class="dropdown-menu container">
                     <li>
                       <div class="yamm-content">
@@ -281,18 +311,16 @@
                               <li><a href="#">Memory Cards</a></li>
                             </ul>
                           </div>
-                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png"></a> </div>
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="{{ asset('app/images/banners/banner-side.png') }}"></a> </div>
                         </div>
                         <!-- /.row --> 
                       </div>
                       <!-- /.yamm-content --> </li>
                   </ul>
                 </li>
-                <li class="dropdown hidden-sm"> <a href="category.html">Health & Beauty <span class="menu-label new-menu hidden-xs">new</span> </a> </li>
-                <li class="dropdown hidden-sm"> <a href="category.html">Watches</a> </li>
-                <li class="dropdown"> <a href="contact.html">Jewellery</a> </li>
-                <li class="dropdown"> <a href="contact.html">Shoes</a> </li>
-                <li class="dropdown"> <a href="contact.html">Kids & Girls</a> </li>
+                <li class="dropdown hidden-sm"> <a href="category.html">Portfolio  <!-- <span class="menu-label new-menu hidden-xs">new</span> --> </a> </li>
+                <li class="dropdown" id="hideable"> <a href="contact.html">Wishlist</a> </li>
+                
                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages</a>
                   <ul class="dropdown-menu pages">
                     <li>
@@ -322,8 +350,20 @@
                     </li>
                   </ul>
                 </li>
-                <li class="dropdown  navbar-right special-menu"> <a href="#">Todays offer</a> </li>
+
+                <li class="dropdown navbar-right special-menu"> <a href="" style="color: #fff !important;"><span class="menu-label hot-sell hidden-xs">Sell</span> </a>
+                </li>
+
+                @if(url()->current() !== url('/') )
+                    <li class="dropdown navbar-right" id="searchbar" style="margin-right: 85px; margin-top: 3px;"><input placeholder='Search...' class='js-search' type="text"><i id="modified" class="fa fa-search"></i>
+                    </li>
+
+                @endif
               </ul>
+
+              <!-- <ul class="nav navbar-nav pull right">
+                
+              </ul> -->
               <!-- /.navbar-nav -->
               <div class="clearfix"></div>
             </div>

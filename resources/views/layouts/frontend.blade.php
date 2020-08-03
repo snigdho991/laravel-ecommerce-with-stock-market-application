@@ -35,6 +35,75 @@
 
 @yield('mar-styles')
 
+<style type="text/css">
+
+    .header-style-1 .header-nav {
+        background: #fff;
+        /* border-bottom: 3px #59B210 solid; */
+        border-bottom: 1px solid #eaeaea !important;
+    }
+
+    .top-bar {
+        border-bottom: 0px solid #eaeaea;
+        background: #ffcc00;
+        margin-top: 9px;
+        font-weight: bold;
+    }
+
+    .main-header {
+    	height: 65px;
+    	padding: 0 !important;
+        background: #ffcc00;
+    }
+
+    .main-header .logo-holder {
+        margin-top: 0px !important;
+    }
+
+    .header-style-1 .header-nav .navbar-default .navbar-collapse .navbar-nav > li .menu-label {
+        top: 9.6px;
+        padding: 6px 23px;
+        right: 0px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .header-style-1 .header-nav .navbar-default .navbar-collapse .navbar-nav > li .menu-label.hot-sell:after {
+        content: unset;
+    }
+    
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        background-color: #eeeeee;
+        color: #333 !important;
+    }
+
+    .header-style-1 .header-nav .navbar .navbar-nav > li > a:hover,
+    .header-style-1 .header-nav .navbar .navbar-nav > li > a:focus {
+      background: #fff;
+      border-radius: 5px 5px 0px 0px;
+      color: #333;
+      border: 3px #fff solid !important;
+      border-bottom: 3px #ffcc00 solid !important;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .logo {
+        margin-left: 474px;
+        margin-top: -70px; 
+        /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+      }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .logo {
+        margin-left: 408px;
+        margin-top: -70px;
+      }
+    }
+       
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
 </head>
 <body class="cnt-home">
     
@@ -94,6 +163,17 @@
 	</script>
 
 @yield('mar-scripts')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
+<script src="{{ asset('app/js/create-charts.js') }}"></script>
+
+    <!-- <script type="text/javascript">
+        $(document).click(function(e) {   
+            if(e.target.id === 'hideable') {
+                $("#hideable").toggle();   
+            }
+        })
+    </script> -->
 
 </body>
 
