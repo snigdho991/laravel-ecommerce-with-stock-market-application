@@ -23,6 +23,7 @@
         padding: 13px;
         width: 81% !important;
     }
+
 </style>
 
 @extends('layouts.frontend')
@@ -103,7 +104,7 @@
   <!-- ============================================== INFO BOXES ============================================== -->
        
         <div class="info-boxes wow fadeInUp" style="margin-top: 110px;">
-          <div class="info-boxes-inner">
+          <!-- <div class="info-boxes-inner">
             <div class="row">
               <div class="col-md-6 col-sm-4 col-lg-4">
                 <div class="info-box">
@@ -114,7 +115,7 @@
                   </div>
                 </div>
               </div>
-              <!-- .col -->
+              .col
               
               <div class="hidden-md col-sm-4 col-lg-4">
                 <div class="info-box">
@@ -128,7 +129,7 @@
                   </div>
                 </div>
               </div>
-              <!-- .col -->
+              .col
               
               <div class="col-md-6 col-sm-4 col-lg-4">
                 <div class="info-box last">
@@ -140,10 +141,10 @@
                   </div>
                 </div>
               </div>
-              <!-- .col --> 
+              .col 
             </div>
-            <!-- /.row --> 
-          </div>
+            /.row 
+          </div> -->
           <!-- /.info-boxes-inner --> 
           
         </div>
@@ -174,14 +175,15 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
+
                         <div class="cart clearfix animate-effect">
                           <div class="action">
                             <ul class="list-unstyled">
@@ -216,12 +218,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -258,12 +260,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -300,12 +302,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -342,12 +344,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -384,12 +386,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -435,12 +437,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -477,12 +479,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -519,12 +521,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -561,12 +563,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -603,12 +605,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -645,12 +647,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -696,12 +698,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -738,12 +740,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -780,12 +782,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -822,12 +824,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -864,12 +866,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -906,12 +908,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -957,12 +959,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -999,12 +1001,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1041,12 +1043,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1083,12 +1085,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1125,12 +1127,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1167,12 +1169,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Samsung Galaxy S4</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1232,12 +1234,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1274,12 +1276,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1316,12 +1318,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1358,12 +1360,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1400,12 +1402,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1442,12 +1444,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1493,12 +1495,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1535,12 +1537,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1577,12 +1579,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1619,12 +1621,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1661,12 +1663,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1703,12 +1705,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1754,12 +1756,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1796,12 +1798,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1838,12 +1840,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1880,12 +1882,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1922,12 +1924,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -1964,12 +1966,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2015,12 +2017,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2057,12 +2059,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2099,12 +2101,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2141,12 +2143,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2183,12 +2185,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2225,12 +2227,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Samsung Galaxy S4</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2290,12 +2292,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2332,12 +2334,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2374,12 +2376,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2416,12 +2418,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2458,12 +2460,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2500,12 +2502,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2551,12 +2553,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2593,12 +2595,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2635,12 +2637,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2677,12 +2679,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2719,12 +2721,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2761,12 +2763,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2812,12 +2814,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2854,12 +2856,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2896,12 +2898,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2938,12 +2940,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -2980,12 +2982,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3022,12 +3024,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3073,12 +3075,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3115,12 +3117,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3157,12 +3159,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3199,12 +3201,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3241,12 +3243,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3283,12 +3285,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Samsung Galaxy S4</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3348,12 +3350,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3390,12 +3392,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3432,12 +3434,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3474,12 +3476,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3516,12 +3518,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3558,12 +3560,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3609,12 +3611,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3651,12 +3653,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3693,12 +3695,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3735,12 +3737,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3777,12 +3779,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3819,12 +3821,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3870,12 +3872,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3912,12 +3914,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3954,12 +3956,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -3996,12 +3998,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4038,12 +4040,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4080,12 +4082,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4131,12 +4133,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4173,12 +4175,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4215,12 +4217,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4257,12 +4259,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4299,12 +4301,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4341,12 +4343,12 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Samsung Galaxy S4</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$800</span> </div>
-                          <!-- /.product-price --> 
-                          
+                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <!-- <div class="rating rateit-small"></div> -->
+                            <div class="product-price" style="margin-top: -7px;margin-bottom: -2px;"> <span class="price-before-discount">Lowest Ask</span></div>
+                            <div class="product-price"> <span class="price-before-discount">3 hours ago</span></div>
+                            <div class="product-price"> <span class="price-before-discount">Price :</span> <span class="price"> $450.99 </span>
+                            <span style="float: right;"><span class="price-before-discount">Sold :</span> <span class="price"> 5 </span></span> </div>
                         </div>
                         <!-- /.product-info -->
                         <div class="cart clearfix animate-effect">
@@ -4777,7 +4779,7 @@
             .copyright-bar {
               background: #3D3D3D;
               padding: 15px 0px;
-              margin-bottom: 20px!important;
+              /* margin-bottom: 20px!important; */
             }
           }
 
@@ -4791,7 +4793,7 @@
           .copyright-bar {
             background: #3D3D3D;
             padding: 15px 0px;
-            margin-bottom: 35px;
+            /* margin-bottom: 35px; */
           }
 
     </style>

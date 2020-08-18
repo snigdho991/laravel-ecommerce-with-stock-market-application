@@ -2868,13 +2868,14 @@ age-container #owl-main .owl-next {
   color: #ffb400;
 }
 .product .product-info .product-price .price {
-  font-weight: 700;
+  color: #3D3D3D !important;
+  font-weight: 600;
   font-size: 14px;
   line-height: 30px;
   margin-right: 8px;
 }
 .product .product-info .product-price .price-before-discount {
-  color: #d3d3d3;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
   line-height: 30px;
   font-size: 14px;
@@ -3357,7 +3358,7 @@ age-container #owl-main .owl-next {
 	display: inline-block!important;
 	text-align: center;
 	padding: 0;
-	background: #027ba5 !important;
+	background: #007bb5 !important;
 }
 .social .youtube a:before {
 	content: "\f167";
@@ -3369,6 +3370,17 @@ age-container #owl-main .owl-next {
 	text-align: center;
 	padding: 0;
 	background: #F03434 !important;
+}
+.social .instagram a:before {
+  content: "\f16d";
+  font-family: FontAwesome;
+}
+.social .instagram a {
+  font-size: 16px;
+  display: inline-block!important;
+  text-align: center;
+  padding: 0;
+  background: #f46f30 !important;
 }
 .social h4 {
 	margin: 25px 0 0px 0px;
@@ -5759,9 +5771,9 @@ tfoot .shopping-cart-btn { border-bottom:1px #e5e5e5 solid; border-top:1px #e5e5
   font-size: 15px;
   color: #666;
 }
-.body-content .sign-in-page .sign-in .social-sign-in a,
-.body-content .sign-in-page .sign-in .social-sign-in a:hover,
-.body-content .sign-in-page .sign-in .social-sign-in a:focus {
+.social-sign-in a,
+.social-sign-in a:hover,
+.social-sign-in a:focus {
   border-radius: 3px;
   padding: 14px 30px;
   font-size: 15px;
@@ -5769,23 +5781,27 @@ tfoot .shopping-cart-btn { border-bottom:1px #e5e5e5 solid; border-top:1px #e5e5
   color: #fff;
   text-align: center;
 }
-.body-content .sign-in-page .sign-in .social-sign-in a i {
+.social-sign-in a i {
   padding-right: 6px;
 }
-.body-content .sign-in-page .sign-in .social-sign-in .facebook-sign-in {
+.social-sign-in .facebook-sign-in {
   background-color: #3d5c98;
   margin-right: 10px;
+  width: 100%;
 }
-.body-content .sign-in-page .sign-in .social-sign-in .facebook-sign-in:hover,
-.body-content .sign-in-page .sign-in .social-sign-in .facebook-sign-in:focus {
+.social-sign-in .facebook-sign-in:hover,
+.social-sign-in .facebook-sign-in:focus {
   background-color: #153470;
 }
-.body-content .sign-in-page .sign-in .social-sign-in .twitter-sign-in {
-  background-color: #22aadf;
+.social-sign-in .twitter-sign-in {
+  background-color: #d44627;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 15px;
 }
-.body-content .sign-in-page .sign-in .social-sign-in .twitter-sign-in:hover,
-.body-content .sign-in-page .sign-in .social-sign-in .twitter-sign-in:focus {
-  background-color: #0084B9;
+.social-sign-in .twitter-sign-in:hover,
+.social-sign-in .twitter-sign-in:focus {
+  background-color: #B0201D;
 }
 .body-content .sign-in-page .create-new-account > span {
   font-size: 20px;

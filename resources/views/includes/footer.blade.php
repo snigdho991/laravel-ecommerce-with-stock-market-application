@@ -130,9 +130,10 @@
           <li class="tw pull-left"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
           <li class="googleplus pull-left"><a target="_blank" rel="nofollow" href="#" title="GooglePlus"></a></li>
           <li class="rss pull-left"><a target="_blank" rel="nofollow" href="#" title="RSS"></a></li>
-          <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="PInterest"></a></li>
+          <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="Pinterest"></a></li>
           <li class="linkedin pull-left"><a target="_blank" rel="nofollow" href="#" title="Linkedin"></a></li>
           <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+          <li class="instagram pull-left"><a target="_blank" rel="nofollow" href="#" title="Instagram"></a></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-6 no-padding">
@@ -154,7 +155,7 @@
 
 
 <!-- ============================================================= FOOTER : END============================================================= --> 
-@if(url()->current() == url('/'))
+<!-- @if(url()->current() == url('/'))
     <div class="marquee">
         <ul class="marquee-content">
           <li>AJ1HZ- <span style="color: #ff5a5f;">BKGM$136 ▼</span></li>
@@ -168,4 +169,4 @@
           
         </ul>
     </div>
-@endif
+@endif -->

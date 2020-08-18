@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Twitter -->
     <meta name="twitter:site" content="@themepixels">
@@ -12,7 +13,7 @@
     <meta name="twitter:title" content="Starlight">
     <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
     <meta name="twitter:image" content="http://themepixels.me/starlight/img/starlight-social.png">
-
+    
     <!-- Facebook -->
     <meta property="og:url" content="http://themepixels.me/starlight">
     <meta property="og:title" content="Starlight">
@@ -48,9 +49,8 @@
     
   </head>
 
-  <body>
-    
-    
+  <body id="body">
+        
 
         @include('admin.inc.leftbar')
 
@@ -59,7 +59,6 @@
         @include('admin.inc.rightmsgbar')
 
         @yield('backend-content')
-
     
 
     <script src="{{ asset('backend/lib/jquery/jquery.js') }}"></script>
@@ -130,6 +129,14 @@
                 timeout: 5000
             }).show(); 
         @endif
+
+        @if(Session::has('noty-warning')) new Noty({ 
+                type:'warning', 
+                layout:'bottomLeft', 
+                text: '{{ Session::get('noty-warning') }}', 
+                timeout: 5000
+            }).show(); 
+        @endif
     </script>
     
     <script type="text/javascript">
@@ -139,47 +146,11 @@
               searchPlaceholder: 'Search...',
               sSearch: '',
               lengthMenu: '_MENU_ items/page',
-            }
+            },
         });
 
         // Select2
         $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script type="text/javascript">
-        $(document).on('click', '#delete', function(e){
-            e.preventDefault();
-            var link = $(this).attr("href");
-            console.log(link)
-
-            Swal.fire({
-              title: 'Are you sure?',
-              text: "You won't be able to revert this!",
-              icon: 'warning',
-              showCancelButton: true,
-              confirmButtonColor: '#3085d6',
-              cancelButtonColor: '#d33',
-              confirmButtonText: 'Yes, delete it!'
-            }).then((result) => {
-              if (result.value) {
-                Swal.fire(
-                  'Deleted!',
-                  'Category has been removed successfully !',
-                  'success'
-                )
-              } else if (
-                /* Read more about handling dismissals below */
-                result.dismiss === Swal.DismissReason.cancel
-              ) {
-                Swal.fire(
-                  'Cancelled',
-                  'Category deletion has been dismissed.',
-                  'error'
-                )
-              }
-            })
-        })
     </script>
 
     <script type="text/javascript">
@@ -190,7 +161,92 @@
                 document.getElementById('button').disabled = false;
             }
         }
+
+        function buttonEnableForEdit() {
+            if (document.getElementById("category_edit").value === "" || !document.getElementById("category_edit").value.trim()) { 
+                document.getElementById('editbutton').disabled = true; 
+            } else { 
+                document.getElementById('editbutton').disabled = false;
+            }
+        }
+
+        function buttonEnableForDiscount() {
+            if (document.getElementById("coupdis_edit").value === "" || !document.getElementById("coupdis_edit").value.trim()) { 
+                document.getElementById('editbutton').disabled = true; 
+            } else { 
+                document.getElementById('editbutton').disabled = false;
+            }
+        }
+
+        function buttonEnableForStatus() {
+            if (document.getElementById("selected_status").value === "" || !document.getElementById("selected_status").value.trim()) { 
+                document.getElementById('editbutton').disabled = true; 
+            } else { 
+                document.getElementById('editbutton').disabled = false;
+            }
+        }
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript">
+        $(document).on('click', '#delete', function(e){
+            e.preventDefault();
+
+            var link = $(this),
+                url  = link.attr("href"),
+                cat  = link.attr("data-title"),
+                csrf_token = $('meta[name="csrf-token"]').attr('content');
+            
+            Swal.fire({
+              title: 'Are you sure?',
+              text: `You won't be able to revert category » ${cat}`,
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+              if (result.value) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: {
+                        '_method': 'DELETE',
+                        '_token': csrf_token
+                    },
+
+                    success: function(response){
+                        var loadUrl = "{{ route('category') }}";
+
+                        Swal.fire(
+                          'Deleted!',
+                          'Category has been removed successfully !',
+                          'success'
+                        ).then(function() {
+                            $('body').load(loadUrl);
+                        });
+                        
+                    }
+                });
+
+              } else if (result.dismiss === Swal.DismissReason.cancel) {
+                Swal.fire(
+                  'Cancelled',
+                  'Category deletion has been dismissed.',
+                  'error'
+                )
+              }
+            })
+        })
+    </script>
+
+    @yield('subcategory-scripts')
+    
+    @yield('category-scripts')
+
+    @yield('menu-scripts')
+
+    @yield('social-scripts')
 
   </body>
 </html>
