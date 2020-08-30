@@ -46,6 +46,10 @@
 
     <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"> --}}
+    <link href="https://parsleyjs.org/src/parsley.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     
   </head>
 
@@ -247,6 +251,27 @@
     @yield('menu-scripts')
 
     @yield('social-scripts')
+
+    @yield('product-scripts')
+
+    @yield('addproduct-scripts')
+
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.4/parsley.min.js"></script>
+
+    <script>
+      $('#parval').parsley();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script type="text/javascript">
+        $('#summernote').summernote({
+            height: 150
+        });
+        /*$(document).ready(function() {
+          $('#summernote').summernote();
+        });*/
+    </script>
 
   </body>
 </html>

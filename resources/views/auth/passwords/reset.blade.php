@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.frontend')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -61,5 +61,57 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
+    <div class="form-wrap">
+        <div class="tabs">
+            <h3 class="login-tab same-style" style="width: 100%;"><a href="" data-toggle="tab">Reset Password</a></h3>
+        </div><!--.tabs-->
+
+        <div class="tabs-content">
+
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <div class="alert alert-danger alert-dismissible fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                </span>
+            @enderror
+
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <div class="alert alert-danger alert-dismissible fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>{{ $message }}</strong>
+                    </div>
+                </span>
+            @enderror
+
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    <strong>{{ session('status') }}</strong>
+                </div>
+            @endif
+            
+            <form method="POST" action="{{ route('password.update') }}">
+                @csrf
+
+                <input type="hidden" name="token" value="{{ $token }}">
+                
+                <label for="email"> E-Mail Address </label>                   
+                <input type="email" class="input @error('email') is-invalid @enderror" value="{{ $email ?? old('email') }}" name="email" id="email" autocomplete="email" placeholder="Email" autofocus> 
+
+                <label for="Password"> New Password </label>                   
+                <input type="password" class="input @error('password') is-invalid @enderror" name="password" id="password" autocomplete="password" placeholder="Password" autofocus>  
+
+                <label for="Password"> Confirm Password </label>                   
+                <input type="password" class="input" name="password_confirmation" id="password-confirm" autocomplete="new-password" placeholder="Re-type Password" autofocus>  
+
+                <button type="submit" class="button">Reset Password</button>
+                 
+            </form>
+        </div>
+
+    </div>
 @endsection

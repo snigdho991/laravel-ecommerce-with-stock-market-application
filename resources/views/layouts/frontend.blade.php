@@ -9,6 +9,7 @@
 <meta name="author" content="">
 <meta name="keywords" content="MediaCenter, Template, eCommerce">
 <meta name="robots" content="all">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>Stock E-commerce</title>
 
 <!-- Bootstrap Core CSS -->
@@ -34,6 +35,162 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 @yield('mar-styles')
+
+<style>
+.same-style {
+    margin-top: 0px !important;
+}
+
+.social-sign-in a,
+.social-sign-in a:hover,
+.social-sign-in a:focus {
+  border-radius: 3px;
+  padding: 14px 30px;
+  font-size: 15px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+.social-sign-in a i {
+  padding-right: 6px;
+}
+.social-sign-in .facebook-sign-in {
+  background-color: #3d5c98;
+  margin-right: 10px;
+  width: 100%;
+}
+.social-sign-in .facebook-sign-in:hover,
+.social-sign-in .facebook-sign-in:focus {
+  background-color: #153470;
+}
+.social-sign-in .twitter-sign-in {
+  background-color: #d44627;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+.social-sign-in .twitter-sign-in:hover,
+.social-sign-in .twitter-sign-in:focus {
+  background-color: #B0201D;
+}
+    .form-wrap {
+  background-color: #fff;
+  width: 320px;
+  margin: 3em auto;
+  box-shadow: 0px 1px 8px #BEBEBE;
+  -webkit-box-shadow: 0px 1px 8px #BEBEBE;
+  -moz-box-shadow: 0px 1px 8px #BEBEBE; }
+  .form-wrap .tabs {
+    overflow: hidden; }
+    .form-wrap .tabs h3 {
+      float: left;
+      width: 50%; }
+      .form-wrap .tabs h3 a {
+        padding: 0.5em 0;
+        text-align: center;
+        font-weight: 400;
+        background-color: #e6e7e8;
+        display: block;
+        color: #666; }
+        .form-wrap .tabs h3 a.active {
+          background-color: #fff; }
+  .form-wrap .tabs-content {
+    padding: 1.5em; }
+    .form-wrap .tabs-content div[id$="tab-content"] {
+      display: none; }
+    .form-wrap .tabs-content .active {
+      display: block !important; }
+  .form-wrap form .input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    padding: .8em 0 10px .8em;
+    border: 1px solid #CFCFCF;
+    outline: 0;
+    display: inline-block;
+    margin: 0 0 .8em 0;
+    padding-right: 2em;
+    width: 100%; }
+  .form-wrap form .button {
+      width: 100%;
+      padding: .8em 0 10px .8em;
+      background-color: #28A55F;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase; 
+      border: 2px solid #28A55F;
+      font-weight: bold;
+      border-radius: 3px;
+  }
+  .form-wrap form .button:hover {
+      background-color: #fff; /* 4FDA8C */
+      border: 2px solid #3D3D3D;
+      color: #3D3D3D;
+      font-weight: bold;
+      border-radius: 3px;
+      transition: .5s;
+  }
+
+  .form-wrap form .button[disabled]{
+      pointer-events: none;
+      cursor: not-allowed;
+      box-shadow: none;
+      opacity: .63;
+  }
+
+
+  
+  .form-wrap .help-text {
+    margin-top: .6em; }
+    .form-wrap .help-text p {
+      text-align: center;
+      font-size: 14px; }
+
+
+    input[type=checkbox] {
+         position: relative;
+           cursor: pointer;
+    }
+
+    input[type=checkbox]:before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 20px;
+         height: 20px;
+         top: 0;
+         left: 0;
+         background-color:#e9e9e9;
+    }
+    input[type=checkbox]:checked:before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 20px;
+         height: 20px;
+         top: 0;
+         left: 0;
+         background-color:#28A55F;
+    }
+
+  input[type=checkbox]:checked:after {
+         content: "";
+         display: block;
+         width: 6px;
+         height: 11px;
+         border: solid white;
+         border-width: 0 2px 2px 0;
+         -webkit-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         transform: rotate(45deg);
+         position: absolute;
+         top: 2.5px;
+         left: 7px;
+    }
+
+</style>
 
 <style type="text/css">
 
@@ -168,6 +325,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
 <script src="{{ asset('app/js/create-charts.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- <script type="text/javascript">
         $(document).click(function(e) {   

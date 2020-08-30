@@ -35,4 +35,16 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'google' => [
+        'client_id' => '96064214480-f3cpcbgrkbrnblavajlvkscgkuot29k3.apps.googleusercontent.com',
+        'client_secret' => 'yKt5P7YHjG2cNNoYzzgbV4Q_',
+        'redirect' => 'http://stock-ecommerce.test/callback/google',
+    ],
+
+    'github' => [
+        'client_id' => '844008d1ad0dd5e29fec',
+        'client_secret' => '865f67dc9a72618f1012bf44c350f31044b7eb44',
+        'redirect' => 'http://stock-ecommerce.test/callback/github',
+    ],
+
 ];

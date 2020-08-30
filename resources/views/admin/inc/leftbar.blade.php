@@ -44,9 +44,9 @@
         </a><!-- sl-menu-link -->
         <ul class="sl-menu-sub nav flex-column">
           <li class="nav-item"><a href="{{ route('menusettings') }}" class="nav-link">Header & Menu Settings</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Body Settings</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Footer Settings</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Social & Payment</a></li>
+          <li class="nav-item"><a href="{{ route('bodysettings') }}" class="nav-link">Body Settings</a></li>
+          <li class="nav-item"><a href="{{ route('footersettings') }}" class="nav-link">Footer Settings</a></li>
+          <li class="nav-item"><a href="{{ route('socialsettings') }}" class="nav-link">Social & Payment</a></li>
           
         </ul>
 

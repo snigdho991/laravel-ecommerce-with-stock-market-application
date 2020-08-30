@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+}); /*->middleware('verified')*/
 
 Route::get('/product', function () {
     return view('product-details');
@@ -29,8 +29,11 @@ Route::post('/logincu', [
 	'as'   => 'user.logincu'
 ]);
 
+// GOOGLE REDIRECTION
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/logout', 'Auth\LoginController@logout')->name('user.logout');
 
@@ -108,5 +111,16 @@ Route::prefix('/admin')->group(function(){
 	  Route::get('/social-settings', 'Site\SocialController@social')->name('socialsettings');
 	  Route::post('/social-settings/edit/{id}', 'Site\SocialController@update')->name('socialsettings.update');
 	  Route::get('/social-settings/status-switcher/{id}', 'Site\SocialController@change_status')->name('socialsettings.change.status');
+
+	  // PRODUCT
+	  Route::get('/products', 'Product\ProductController@products')->name('products');
+	  Route::post('/update-product-status', 'Product\ProductController@update_product_status')->name('update.product.status');
+	  Route::get('/add-product', 'Product\ProductController@add_product')->name('add.product');
+	  Route::get('/category-wise-subcategory/{category_slug}', 'Product\ProductController@category_wise_subcategory')->name('category.wise.subcategory');
+	  Route::get('/subcategory-wise-childsubcategory/{subcategory_slug}', 'Product\ProductController@subcategory_wise_childsubcategory')->name('subcategory.wise.childsubcategory');
+	  Route::post('/product/store', 'Product\ProductController@store')->name('product.store');
+	  Route::get('/product/{slug}', 'Product\ProductController@view_product')->name('product.view');
+	  Route::get('/product/edit/{slug}', 'Product\ProductController@edit')->name('product.edit');
+
 
 });
