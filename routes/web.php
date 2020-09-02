@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('index');
 }); /*->middleware('verified')*/
 
-Route::get('/product', function () {
-    return view('product-details');
-});
+Route::get('/product/{slug}', [
+    'uses' => 'Product\FrontendProductController@frontend_single_product',
+	'as'   => 'frontend.product'
+]);
 
 /*Route::get('/join-us', [
     'uses' => 'TestController@demu',
@@ -121,6 +122,10 @@ Route::prefix('/admin')->group(function(){
 	  Route::post('/product/store', 'Product\ProductController@store')->name('product.store');
 	  Route::get('/product/{slug}', 'Product\ProductController@view_product')->name('product.view');
 	  Route::get('/product/edit/{slug}', 'Product\ProductController@edit')->name('product.edit');
-
+	  Route::post('/product/update/{id}', 'Product\ProductController@update')->name('product.update');
+	  Route::get('/product/{slug}/attributes', 'Product\ProductController@add_attributes')->name('product.attributes');
+	  Route::post('/product/{id}/attributes/store', 'Product\ProductController@store_attributes')->name('product.attributes.store');
+	  Route::delete('/product/delete/{id}', 'Product\ProductController@destroy')->name('product.destroy');
+	  Route::delete('/product/attribute/delete/{id}', 'Product\ProductController@attribute_destroy')->name('attribute.destroy');
 
 });

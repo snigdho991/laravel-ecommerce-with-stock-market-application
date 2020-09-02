@@ -194,9 +194,9 @@
               </div><!-- col -->
 
               <div class="col-lg mg-t-10 mg-lg-t-0">
-                  <a href="{{ route('product.view', ['slug' => $product->product_slug]) }}" class="btn btn-primary btn-sm" id="coupon_delete"><i class="icon ion-eye"></i> Okay </a>
+                  <a href="{{ route('products') }}" class="btn btn-primary btn-sm" id="coupon_delete"><i class="icon ion-eye"></i> Okay </a>
 
-                  <a href="{{ route('product.view', ['slug' => $product->product_slug]) }}" class="btn btn-info btn-sm" style="margin-left: 20px;" id="coupon_delete"><i class="fa fa-pencil"></i> Edit </a>
+                  <a href="{{ route('product.edit', ['slug' => $product->product_slug]) }}" class="btn btn-info btn-sm" style="margin-left: 20px;" id="coupon_delete"><i class="fa fa-pencil"></i> Edit </a>
               </div>
                   
               <div class="col-lg mg-t-10 mg-lg-t-0" style="margin-left: 70px;">
@@ -336,7 +336,4 @@
         });
     </script>
 
-    <script type="text/javascript">
-        
-    </script>
 @endsection

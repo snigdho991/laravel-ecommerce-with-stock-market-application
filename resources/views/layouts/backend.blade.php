@@ -256,12 +256,10 @@
 
     @yield('addproduct-scripts')
 
+    @yield('addproductattr-scripts')
+
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.4/parsley.min.js"></script>
-
-    <script>
-      $('#parval').parsley();
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <script type="text/javascript">
@@ -271,6 +269,10 @@
         /*$(document).ready(function() {
           $('#summernote').summernote();
         });*/
+    </script>
+
+    <script>
+        $('#parval').parsley();
     </script>
 
   </body>

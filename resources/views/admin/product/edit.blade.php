@@ -50,7 +50,7 @@
 
       <div class="sl-pagebody">
         <div class="sl-page-title">
-          <h5>Add Product</h5>
+          <h5>Edit Product</h5>
         </div><!-- sl-page-title -->
 
         <div class="card pd-20 pd-sm-40">
@@ -65,11 +65,12 @@
           @endif
           <h6 class="card-body-title mg-b-20 mg-sm-b-20 text-center">Product Portion</h6>
           <p class="mg-b-20 mg-sm-b-30"></p>
-        <form action="{{ route('product.store') }}" method="post" id="parval" enctype="multipart/form-data">
+        <form action="{{ route('product.update', ['id' => $product->id ]) }}" method="post" id="parval" enctype="multipart/form-data">
         @csrf
           <div class="row">
             <div class="col-lg">
               <label><b>&#129191; Product Name (*)</b></label>
+              
               <input class="form-control" name="product_name" id="product_name" value="{{ $product->product_name }}" type="text" required>
             </div><!-- col -->
             <div class="col-lg mg-t-10 mg-lg-t-0">
@@ -146,7 +147,7 @@
               <div class="col-lg">
                   <label><b> &#129191; Main image (*)</b></label><br>
                   <label class="custom-file">
-                    <input type="file" id="file2" name="main_image" class="custom-file-input" required>
+                    <input type="file" id="file2" name="main_image" class="custom-file-input">
                     <span class="custom-file-control custom-file-control-primary"></span>
                   </label>
 

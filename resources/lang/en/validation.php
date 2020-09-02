@@ -122,6 +122,9 @@ return [
         'user_pass'    => 'password',
         'user_country' => 'country',
         'terms'        => 'terms',
+        'size.*'       => 'size',
+        'sku.*'        => 'SKU',
+        'stock.*'      => 'stock',
     ],
 
 ];

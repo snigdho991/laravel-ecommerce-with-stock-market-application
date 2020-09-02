@@ -388,9 +388,9 @@ svg.checkbox .is_unchecked{
                   <th class="wd-10p">Product Code</th>
                   <th class="wd-10p">Retail Price</th>
                   <th class="wd-20p">Catalogues</th>
-                  <th class="wd-15p">Image</th>
+                  <th class="wd-10p">Image</th>
                   <th class="wd-20p">Status</th>
-                  <th class="wd-10p">Action</th>
+                  <th class="wd-15p">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -433,7 +433,11 @@ svg.checkbox .is_unchecked{
                   <td>
                       <a href="{{ route('product.view', ['slug' => $product->product_slug]) }}" class="btn btn-primary btn-sm" title="View"><i class="icon ion-eye"></i> </a>
 
-                      <a href="{{ route('product.edit', ['slug' => $product->product_slug]) }}" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-pencil"></i> </a>
+                      <a href="{{ route('product.attributes', ['slug' => $product->product_slug]) }}" class="btn btn-success btn-sm" title="Attributes"><i class="fa fa-info"></i> </a>
+
+                      <a href="{{ route('product.edit', ['slug' => $product->product_slug]) }}" class="btn btn-info btn-sm" title="Edit"><i class="fa fa-pencil"></i> </a>
+
+                      <a href="{{ route('product.destroy', ['id' => $product->id]) }}" data-productcode="{{ $product->product_code }}" class="btn btn-sm btn-danger" id="product_delete"><i class="icon ion-trash-a"></i> </a>
 
                   </td>
                 </tr>
@@ -494,6 +498,57 @@ svg.checkbox .is_unchecked{
             })
         });
     </script>
-    
+
+    <script type="text/javascript">
+        $(document).on('click', '#product_delete', function(e){
+            e.preventDefault();
+
+            var link = $(this),
+                url  = link.attr("href"),
+                product  = link.attr("data-productcode"),
+                csrf_token = $('meta[name="csrf-token"]').attr('content');
+            
+            Swal.fire({
+              title: 'Are you sure?',
+              text: `Product will be permanently lost! Product code » ${product}`,
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+              if (result.value) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: {
+                        '_method': 'DELETE',
+                        '_token': csrf_token
+                    },
+
+                    success: function(response){
+                        var loadUrl = "{{ route('products') }}";
+
+                        Swal.fire(
+                          'Deleted!',
+                          'Product has been removed successfully !',
+                          'success'
+                        ).then(function() {
+                            $('body').load(loadUrl);
+                        });
+                        
+                    }
+                });
+
+              } else if (result.dismiss === Swal.DismissReason.cancel) {
+                Swal.fire(
+                  'Cancelled',
+                  'Product deletion has been dismissed.',
+                  'error'
+                )
+              }
+            })
+        })
+    </script>
     
 @endsection
