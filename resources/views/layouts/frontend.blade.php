@@ -33,6 +33,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
 
 @yield('mar-styles')
 
@@ -197,7 +198,7 @@
     .header-style-1 .header-nav {
         background: #fff;
         /* border-bottom: 3px #59B210 solid; */
-        border-bottom: 1px solid #eaeaea !important;
+        border-bottom: 0px !important;
     }
 
     .top-bar {
@@ -257,10 +258,28 @@
         margin-top: -70px;
       }
     }
-       
+
+    #fetchSub li a.active {
+       color:#e53b51;
+       background: blue;
+   }
+
+   .swal2-title {
+        font-size: 15px !important;
+    }
+
+    .breadcrumb ul li:after {
+        content: "" !important;
+    }
+
+
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://kmlpandey77.github.io/bootnavbar/css/bootnavbar.css">
+
 </head>
 <body class="cnt-home">
     
@@ -322,6 +341,8 @@
 @yield('mar-scripts')
 
 @yield('join-scripts')
+@yield('pro-details')
+@yield('buy-bid')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
 <script src="{{ asset('app/js/create-charts.js') }}"></script>
@@ -334,6 +355,206 @@
             }
         })
     </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://kmlpandey77.github.io/bootnavbar/js/bootnavbar.js" ></script>
+    <script>
+        $(function () {
+            $('#bootnavbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+
+    <script type="text/javascript">
+          function showSubcategories(ele) 
+          {
+             
+              var category_slug = $(ele).attr('data-value');
+              
+              if (category_slug) {
+                  
+                  $.ajax({
+                    url: "{{ url('category-wise-subcategory/') }}/" + category_slug,
+                    type: "GET",
+                    dataType: "json",
+                    success: function(data) { 
+
+                        $('.navbarDropdown2').hide();
+                        /*$('select[name="subcategory_slug"]').append('<option value="">Chose One</option>');*/
+                          $.each(data, function(key, value){ 
+                            
+                            $('.navSubcategory').append('<a class="dropdown-item dropdown-toggle navbarDropdown2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" data-cvalue="'+ value.subcategory_slug +'" aria-expanded="false">' + value.subcategory_name + '</a>');
+
+                            $('.navbarDropdown2').attr('onmouseenter', 'showChildSubcategories(this);');
+
+                            
+                            /*$('nav ul li ul li ul li a').on({
+                                mouseenter: function() {
+                                  console.log($(this).index())
+                                  if ($('#navbarDropdown1:hover').length > 0) {
+                                     $('#navbarDropdown1').css('background-color', 'green');
+                                  }
+                                  
+                                }
+                            });*/
+
+                            /*$('#fetchSub').find('li a').mouseover(function () {
+                                $('#fetchSub').find('li a').removeClass('active');
+                                $(this).addClass('active');
+                                var ind = $(this).index();
+                                console.log(ind);
+                                $($(this).closest('li .menu').children()[ind]).addClass('active');
+                            });*/
+
+                          });
+                      },
+                  });
+                } /*else {
+                    $('select[name="subcategory_slug"]').empty();
+                    $('select[name="subcategory_slug"]').append('<option value="">Select a category first</option>');
+                    $('select[name="childsubcategory_slug"]').empty();
+                    $('select[name="childsubcategory_slug"]').append('<option value="">Select a subcategory first</option>');
+                }*/
+          }
+
+        
+          function showChildSubcategories(ele){
+            
+              var subcategory_slug = $(ele).attr('data-cvalue');
+              console.log(subcategory_slug)
+              if (subcategory_slug) {
+                  
+                  $.ajax({
+                    url: "{{ url('subcategory-wise-childsubcategory/') }}/" + subcategory_slug,
+                    type: "GET",
+                    dataType: "json",
+                    success: function(data) { 
+
+                        /*$('select[name="subcategory_slug"]').append('<option value="">Chose One</option>');*/
+                        var d = $('.navChildSubcategory').empty();
+                          $.each(data, function(key, value){ 
+                            console.log(data)
+                            $('.navChildSubcategory').append('<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' + value.childsubcategory_name + '</a>');
+
+                            /*$('nav ul li ul li ul li a').on({
+                                mouseenter: function() {
+                                  console.log($(this).index())
+                                  if ($('#navbarDropdown1:hover').length > 0) {
+                                     $('#navbarDropdown1').css('background-color', 'green');
+                                  }
+                                  
+                                }
+                            });*/
+
+                            /*$('#fetchSub').find('li a').mouseover(function () {
+                                $('#fetchSub').find('li a').removeClass('active');
+                                $(this).addClass('active');
+                                var ind = $(this).index();
+                                console.log(ind);
+                                $($(this).closest('li .menu').children()[ind]).addClass('active');
+                            });*/
+
+                          });
+                    },
+                  });
+                } /*else {
+                    $('select[name="subcategory_slug"]').empty();
+                    $('select[name="subcategory_slug"]').append('<option value="">Select a category first</option>');
+                    $('select[name="childsubcategory_slug"]').empty();
+                    $('select[name="childsubcategory_slug"]').append('<option value="">Select a subcategory first</option>');
+                }*/
+          }
+          
+
+      
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript">
+    
+        $(document).ready(function(){
+          $('.followProduct').on('click', function(){
+            var slug = $(this).data('proslug');
+            if (slug) {
+                $.ajax({
+                    url: "{{ url('follow/') }}/" + slug,
+                    type: "GET",
+                    datType: "json",
+                    success: function(data){
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            padding: '1em',
+                            width: 375,
+                            showConfirmButton: false,
+                            timer: 4200,
+                            timerProgressBar: true,
+                            onOpen: (toast) => {
+                              toast.addEventListener('mouseenter', Swal.stopTimer)
+                              toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        })
+
+                        if ($.isEmptyObject(data.error)) {
+                          Toast.fire({
+                            icon: 'success',
+                            title: data.success
+
+                          })
+                        } else {
+                           Toast.fire({
+                            icon: 'error',
+                            title: data.error
+                          })
+                        }
+
+                    },
+                });
+            } else {
+                Toast.fire({
+                  icon: 'error',
+                  title: 'Something went wrong ! Try again later.'
+                })
+            }
+            return false;
+          });
+        });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
+<script>        
+    @if(Session::has('noty-success')) new Noty({ 
+            type:'success', 
+            layout:'bottomLeft', 
+            text: '{{ Session::get('noty-success') }}', 
+            timeout: 5000
+        }).show(); 
+    @endif
+
+    @if(Session::has('noty-info')) new Noty({ 
+            type:'info', 
+            layout:'bottomLeft', 
+            text: '{{ Session::get('noty-info') }}', 
+            timeout: 5000
+        }).show(); 
+    @endif
+
+    @if(Session::has('noty-error')) new Noty({ 
+            type:'error', 
+            layout:'bottomLeft', 
+            text: '{{ Session::get('noty-error') }}', 
+            timeout: 5000
+        }).show(); 
+    @endif
+
+    @if(Session::has('noty-warning')) new Noty({ 
+            type:'warning', 
+            layout:'bottomLeft', 
+            text: '{{ Session::get('noty-warning') }}', 
+            timeout: 5000
+        }).show(); 
+    @endif
+</script>
 
 </body>
 

@@ -182,9 +182,9 @@
 
                 <tr>
                   <td> {{ $key + 1 }} </td>
-                  <td> {{ $attr['size'] }}</td>
-                  <td> {{ $attr['sku'] }}</td>
-                  <td> {{ $attr['stock'] }}</td>
+                  <td> {{ $attr['size'] }} </td>
+                  <td> {{ $attr['sku'] }} </td>
+                  <td> {{ $attr['stock'] }} </td>
                   
                   <td> 
                     <a href="{{ route('attribute.destroy', ['id' => $attr['id']]) }}" data-attrsize="{{ $attr['size'] }}" class="btn btn-sm btn-danger" id="attr_delete"><i class="icon ion-trash-a"></i> </a>

@@ -280,7 +280,7 @@
                 if (category_slug) {
                   
                   $.ajax({
-                    url: "{{ url('admin/category-wise-subcategory/') }}/" + category_slug,
+                    url: "{{ url('category-wise-subcategory/') }}/" + category_slug,
                     type: "GET",
                     dataType: "json",
                     success: function(data) { 
@@ -311,7 +311,7 @@
                 if (subcategory_slug) {
                   
                   $.ajax({
-                    url: "{{ url('admin/subcategory-wise-childsubcategory/') }}/" + subcategory_slug,
+                    url: "{{ url('subcategory-wise-childsubcategory/') }}/" + subcategory_slug,
                     type: "GET",
                     dataType: "json",
                     success: function(data) { 

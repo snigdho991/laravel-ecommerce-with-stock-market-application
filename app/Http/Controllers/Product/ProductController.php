@@ -63,18 +63,6 @@ class ProductController extends Controller
         return view('admin.product.add')->with('occasionArray', $occasionArray)->with('categories', $categories);
     }
 
-    public function category_wise_subcategory($category_slug)
-    {
-        $cat = DB::table('subcategories')->where('category_slug', $category_slug)->get();
-        return response()->json($cat);
-    }
-
-    public function subcategory_wise_childsubcategory($subcategory_slug)
-    {
-        $subcat = DB::table('child_subcategories')->where('subcategory_slug', $subcategory_slug)->get();
-        return response()->json($subcat);
-    }
-
     public function store(Request $request)
     {
         $this->validate($request, [

@@ -88,7 +88,7 @@
               <input class="form-control" name="product_weight" id="product_weight" value="{{ old('product_weight') }}" type="text">
             </div><!-- col -->
             <div class="col-lg mg-t-10 mg-lg-t-0">
-              <label><b> &#129191; Product Discount</b></label>
+              <label><b> &#129191; Product Discount (In USD)</b></label>
               <input class="form-control" name="product_discount" id="product_discount" value="{{ old('product_discount') }}" step="any" min="0.1" type="number">
             </div><!-- col -->
             <div class="col-lg mg-t-10 mg-lg-t-0">
@@ -251,7 +251,7 @@
                 if (category_slug) {
                   
                   $.ajax({
-                    url: "{{ url('admin/category-wise-subcategory/') }}/" + category_slug,
+                    url: "{{ url('category-wise-subcategory/') }}/" + category_slug,
                     type: "GET",
                     dataType: "json",
                     success: function(data) { 
@@ -282,7 +282,7 @@
                 if (subcategory_slug) {
                   
                   $.ajax({
-                    url: "{{ url('admin/subcategory-wise-childsubcategory/') }}/" + subcategory_slug,
+                    url: "{{ url('subcategory-wise-childsubcategory/') }}/" + subcategory_slug,
                     type: "GET",
                     dataType: "json",
                     success: function(data) { 

@@ -11,14 +11,42 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-}); /*->middleware('verified')*/
+Route::get('/', [
+    'uses' => 'Product\FrontendProductController@index',
+	'as'   => 'index'
+]); /*->middleware('verified')*/
 
+Route::get('/filter', function(){
+	return view('filter');
+});
+
+Route::get('/faq', function(){
+	return view('faq');
+});
+    
 Route::get('/product/{slug}', [
     'uses' => 'Product\FrontendProductController@frontend_single_product',
 	'as'   => 'frontend.product'
 ]);
+
+Route::get('/following-products', [
+    'uses' => 'Product\FrontendProductController@user_following_products',
+	'as'   => 'following.products'
+])->middleware(['auth', 'verified']);
+
+Route::get('/follow/{slug}', [
+    'uses' => 'Product\FrontendProductController@follow_product',
+	'as'   => 'follow.product'
+]);
+
+Route::get('/category-wise-subcategory/{category_slug}', 'Product\FrontendProductController@category_wise_subcategory')->name('category.wise.subcategory');
+
+Route::get('/subcategory-wise-childsubcategory/{subcategory_slug}', 'Product\FrontendProductController@subcategory_wise_childsubcategory')->name('subcategory.wise.childsubcategory');
+
+Route::get('/get-product-attributes', 'Product\FrontendProductController@get_product_attributes')->name('get.product.attributes');
+
+// BID
+Route::post('/bid/review/{slug}', 'Product\BidController@bid_product')->name('product.bid');
 
 /*Route::get('/join-us', [
     'uses' => 'TestController@demu',
@@ -112,13 +140,13 @@ Route::prefix('/admin')->group(function(){
 	  Route::get('/social-settings', 'Site\SocialController@social')->name('socialsettings');
 	  Route::post('/social-settings/edit/{id}', 'Site\SocialController@update')->name('socialsettings.update');
 	  Route::get('/social-settings/status-switcher/{id}', 'Site\SocialController@change_status')->name('socialsettings.change.status');
+	// SITE SETTINGS END
 
 	  // PRODUCT
 	  Route::get('/products', 'Product\ProductController@products')->name('products');
 	  Route::post('/update-product-status', 'Product\ProductController@update_product_status')->name('update.product.status');
 	  Route::get('/add-product', 'Product\ProductController@add_product')->name('add.product');
-	  Route::get('/category-wise-subcategory/{category_slug}', 'Product\ProductController@category_wise_subcategory')->name('category.wise.subcategory');
-	  Route::get('/subcategory-wise-childsubcategory/{subcategory_slug}', 'Product\ProductController@subcategory_wise_childsubcategory')->name('subcategory.wise.childsubcategory');
+	  
 	  Route::post('/product/store', 'Product\ProductController@store')->name('product.store');
 	  Route::get('/product/{slug}', 'Product\ProductController@view_product')->name('product.view');
 	  Route::get('/product/edit/{slug}', 'Product\ProductController@edit')->name('product.edit');
