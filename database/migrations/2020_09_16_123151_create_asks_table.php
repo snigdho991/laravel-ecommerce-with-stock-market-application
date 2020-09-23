@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBidsTable extends Migration
+class CreateAsksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateBidsTable extends Migration
      */
     public function up()
     {
-        Schema::create('bids', function (Blueprint $table) {
+        Schema::create('asks', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->integer('product_id');
             $table->string('product_slug');
-            $table->float('bid_amount');
+            $table->float('ask_amount');
             $table->float('total_pay');
             $table->string('size');
             $table->tinyInteger('status');
@@ -33,6 +33,6 @@ class CreateBidsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bids');
+        Schema::dropIfExists('asks');
     }
 }

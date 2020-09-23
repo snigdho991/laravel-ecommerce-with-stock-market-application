@@ -55,7 +55,7 @@
 
 	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
 	    color: #fff !important;
-	    background-color: rgb(2, 158, 116) !important;
+	    background-color: #ff5a5f !important;
 	}
 
 	#pills-tabContent{
@@ -66,12 +66,6 @@
 		color: #fff !important;
 		background-color: #DC3545 !important;
 		border-color: #DC3545 !important;
-	}
-
-	.lowest_ask{
-		font-size: 15px;
-		font-weight: bold;
-		
 	}
 
 </style>
@@ -178,10 +172,10 @@
 
 	                                        <ul class="btn btn-default nav nav-pills mb-3 custom-tab" id="pills-tab custom-tab" role="tablist">
 											  <li class="nav-item active">
-											    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" style="margin-left: -1px;" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Place Bid</a>
+											    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" style="margin-left: -1px;" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Place Ask</a>
 											  </li>
 											  <li class="nav-item">
-											    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" style="width: 313px;" aria-selected="false">Buy Now</a>
+											    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" style="width: 313px;" aria-selected="false">Sell Now</a>
 											  </li>
 											  
 											</ul>
@@ -194,7 +188,7 @@
 								<div class="tab-content" id="pills-tabContent">
 									<div class="tab-pane fade in active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 										<div class="col-md-9 contact-form">	
-										<form class="register-form" role="form" action="{{ route('product.bid', ['slug' => $product->product_slug ]) }}" method="get">
+										<form class="register-form" role="form" action="{{ route('product.ask', ['slug' => $product->product_slug ]) }}" method="get">
 											
 											<input type="hidden" name="product_id" value="{{ $product->id }}">
 											<div class="col-md-8">
@@ -213,44 +207,34 @@
 
 											<div class="form-group">
 												<label class="info-title" for="exampleInputTitle"><h4>Enter Amount ($)</h4> <span></span></label>
-												<input type="number" step="any" min="1" name="bid_amount" class="form-control unicase-form-control text-input bid_amount" id="exampleInputTitle" placeholder="Bid Amount">
+												<input type="number" step="any" min="1" name="ask_amount" class="form-control unicase-form-control text-input ask_amount" id="exampleInputTitle" placeholder="Ask Amount">
 											</div>
 
 											<div class="form-group enterCoupon" style="display: none;">
 												<label class="info-title" for="exampleInputTitle"><h4>Enter Coupon </h4> <span></span></label>
 												<input type="text" name="coupon_code" class="form-control unicase-form-control text-input coupon_code" id="exampleInputTitle" placeholder="Coupon Code"><br>
 												<a href="#" class="cancelCoupon"><i class="fa fa-times"></i> Cancel</a>
+
+												<input type="hidden" name="total_pay" value="" id="ask_payout">	
+												<input type="hidden" name="transaction_fee_in" value="" id="transaction_fee_in">	
+												<input type="hidden" name="payment_proc_in" value="" id="payment_proc_in">	
 											</div>
 
 											</div>
 
 											<div class="col-md-12 outer-bottom-small m-t-20">
-												<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Review Bid</button>
+												<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Review Ask</button>
 											</div>
 										</form>
 										</div>
 
 										<div class="col-md-3 payable" style="display: none;">
-											<h4>Total Payable Amount</h4><p style="font-size: 15px;">Processing Fee : <b>$10.00</b></p><p style="font-size: 15px;">Estimated Shipping : <b>$13.95</b></p><span class="coupon_input"></span><a href="#" class="coupon_dis">Do you have any coupon ?</a><hr><p style="font-size: 15px;">Total Amount : <b>$<span id="total_expenses"></span></b></p>						
+											<h4>Total Payout Amount</h4><p style="font-size: 15px;">Ask Amount : <b id="ask_total"></b></p><p style="font-size: 15px;">Transaction Fee (9.5%) : <b>$</b><b id="transaction_fee"></b></p><p style="font-size: 15px;">Payment Proc. (3%) : <b>$</b><b id="payment_proc"></b></p><span class="coupon_input"></span><a href="#" class="coupon_dis">Do you have any coupon ?</a><hr><p style="font-size: 15px;">Total Amount : <b>$<span id="total_payout"></span></b></p>
+
 										</div>
 									</div>
 
-									<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-										@if($lowest_ask)
-											<form action="{{ route('buy.now') }}" method="post">
-												@csrf
-												<div class="col-md-7">
-													<div class="form-group">
-													<label class="info-title" for="exampleInputTitle"><h4>Lowest Ask ($)</h4></label>
-
-													<input type="text" value="{{ $lowest_ask->ask_amount }}" readonly="" name="lowest_ask_amount" class="form-control unicase-form-control text-input lowest_ask" id="exampleInputTitle"><br>
-													<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Buy Now</button>
-													</div>
-												</div>
-											</form>
-										@else 
-											<input type="text" value="No Lowest Ask Found." readonly="" class="form-control unicase-form-control text-input lowest_ask" id="exampleInputTitle">
-										@endif
+									<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><b>Buy Now Content</b>
 									</div>
 								  
 								</div>										
@@ -277,16 +261,24 @@
 
 @endsection
 
-@section('buy-bid')
+@section('sell-ask')
 	<script type="text/javascript">
-		$('.bid_amount').keyup(function() {
+		$('.ask_amount').keyup(function() {
 			$('.payable').css('display', 'block');
 
-		    var bid_amount = Number($('.bid_amount').val());   // get value of field
-		    var processing = 10;
-		    var shipping   = 13.95;
+		    var ask_amount = Number($('.ask_amount').val());   // get value of field
+		    var transaction_fee = (ask_amount * 9.5) / 100;
+		    var payment_proc    = (ask_amount * 3) / 100;
+		    var total = ask_amount - transaction_fee - payment_proc;
 		    
-		    $('#total_expenses').html(bid_amount + processing + shipping);
+		    $('#ask_total').html(ask_amount);
+		    $('#transaction_fee').html(transaction_fee);
+		    $('#payment_proc').html(payment_proc);
+		    $('#total_payout').html(total);
+
+		    document.getElementById('ask_payout').value = total;
+		    document.getElementById('transaction_fee_in').value = transaction_fee;
+		    document.getElementById('payment_proc_in').value = payment_proc;
 
 		    $('.coupon_dis').on('click', function() {
 		    	$('.coupon_dis').hide();
@@ -299,7 +291,6 @@
 
 		    	var domItem = document.querySelector('.product-info-block');
 	            domItem.scrollIntoView({behaviour: "smooth"});
-	            return false;
 		    });
 
 
@@ -310,7 +301,6 @@
 
 		    	var domItem2 = document.querySelector('.product-info-block');
 	            domItem2.scrollIntoView({behaviour: "smooth"});
-	            return false;
 		    });
 
 		    

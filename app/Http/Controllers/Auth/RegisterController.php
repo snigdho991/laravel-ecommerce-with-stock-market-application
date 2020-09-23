@@ -66,12 +66,15 @@ class RegisterController extends Controller
     {
         $avatar = 'public/app/images/defaults/avatar/male-3.jpg';
 
-        return User::create([
+        $user = User::create([
             'name'      => $data['user_name'],
             'email'     => $data['user_email'],
             'password'  => bcrypt($data['user_pass']),
             'country'   => $data['user_country'],
             'avatar'    => $avatar,
         ]);
+
+        /*$user->billingshippingaddress()->save(new BillingShippingAddress());*/
+        return $user;
     }
 }

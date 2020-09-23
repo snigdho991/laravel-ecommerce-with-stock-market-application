@@ -34,9 +34,29 @@ Route::get('/following-products', [
 	'as'   => 'following.products'
 ])->middleware(['auth', 'verified']);
 
+Route::get('/my-portfolio', [
+    'uses' => 'Product\FrontendProductController@user_portfolio_products',
+	'as'   => 'portfolio.products'
+])->middleware(['auth', 'verified']);
+
+Route::get('/my-bids', [
+    'uses' => 'Product\BidController@user_bids',
+	'as'   => 'user.bids'
+])->middleware(['auth', 'verified']);
+
+Route::get('/my-asks', [
+    'uses' => 'Product\AskController@user_asks',
+	'as'   => 'user.asks'
+])->middleware(['auth', 'verified']);
+
 Route::get('/follow/{slug}', [
     'uses' => 'Product\FrontendProductController@follow_product',
 	'as'   => 'follow.product'
+]);
+
+Route::get('/portfolio/{slug}', [
+    'uses' => 'Product\FrontendProductController@add_to_portfolio',
+	'as'   => 'portfolio.product'
 ]);
 
 Route::get('/category-wise-subcategory/{category_slug}', 'Product\FrontendProductController@category_wise_subcategory')->name('category.wise.subcategory');
@@ -46,12 +66,28 @@ Route::get('/subcategory-wise-childsubcategory/{subcategory_slug}', 'Product\Fro
 Route::get('/get-product-attributes', 'Product\FrontendProductController@get_product_attributes')->name('get.product.attributes');
 
 // BID
-Route::post('/bid/review/{slug}', 'Product\BidController@bid_product')->name('product.bid');
+Route::get('/bid/review/{slug}', 'Product\BidController@bid_product')->name('product.bid')->middleware('auth:web');
+Route::post('/bid/store', 'Product\BidController@store_bid')->name('bid.store')->middleware('auth:web');
 
-/*Route::get('/join-us', [
-    'uses' => 'TestController@demu',
-	'as'   => 'user.login'
-]);*/
+// ASK
+Route::get('/ask/review/{slug}', 'Product\AskController@ask_product')->name('product.ask')->middleware('auth:web');
+Route::post('/ask/store', 'Product\AskController@store_ask')->name('ask.store')->middleware('auth:web');
+
+// BUY
+
+Route::get('/card-details', [
+    'uses' => 'Payment\PaymentController@add_stripe',
+	'as'   => 'stripe.add'
+])->middleware(['auth', 'verified']);
+
+Route::post('/save-card', [
+    'uses' => 'Payment\PaymentController@save_card',
+	'as'   => 'save.card'
+])->middleware(['auth', 'verified']);
+
+Route::post('/buy-now', 'Payment\PaymentController@buy_now')->name('buy.now')->middleware(['auth', 'verified']);
+
+Route::post('/buy-via-card', 'Payment\PaymentController@buy_via_card')->name('buy.via.card')->middleware(['auth', 'verified']);
 
 Route::post('/logincu', [
     'uses' => 'TestController@custom',

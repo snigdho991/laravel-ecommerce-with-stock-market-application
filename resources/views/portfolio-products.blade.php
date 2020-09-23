@@ -15,7 +15,7 @@
 			<ul class="list-inline list-unstyled">
 				<li><a href="#">Home</a></li>
 				
-				<b> &raquo; </b> <li class='active'>Following Products</li>
+				<b> &raquo; </b> <li class='active'>Portfolio Products</li>
 
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
@@ -41,23 +41,23 @@
 			</thead>
 			<tbody>
 
-			@foreach ($followed_products as $followed_product)				
+			@foreach ($portfolio_products as $portfolio_product)				
 				<tr>
 					<td class="col-md-2"><img src="{{ asset('app/uploads/product_images/main_image/small/blog_big_01.jpg-45325.jpg') }}" style="height: 60px; width: 75px;" alt="image"></td>
 					<td class="col-md-3">
-						<div class="product-name"><a href="#">{{ $followed_product->product_name }}</a></div>
+						<div class="product-name"><a href="#">{{ $portfolio_product->product_name }}</a></div>
 						
 						
-							{{-- <span style="font-size: 14px; font-weight: 550;">Retail Price : {{ $followed_product->product_price }} USD</span> --}}
+							{{-- <span style="font-size: 14px; font-weight: 550;">Retail Price : {{ $portfolio_product->product_price }} USD</span> --}}
 							{{-- <span>$900.00</span> --}}
 						
 					</td>
 					<td class="col-md-3">
-						{{ $followed_product->product_price }} USD
+						{{ $portfolio_product->product_price }} USD
 					</td>
 
 					<td class="col-md-2">
-						{{ $followed_product->product_price }} USD
+						{{ $portfolio_product->product_price }} USD
 					</td>
 
 					<td class="col-md-2 close-btn">

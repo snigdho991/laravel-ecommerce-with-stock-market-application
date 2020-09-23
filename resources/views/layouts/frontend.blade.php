@@ -34,6 +34,7 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 
 @yield('mar-styles')
 
@@ -343,6 +344,8 @@
 @yield('join-scripts')
 @yield('pro-details')
 @yield('buy-bid')
+@yield('sell-ask')
+@yield('add-stripe')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
 <script src="{{ asset('app/js/create-charts.js') }}"></script>
@@ -520,7 +523,58 @@
             return false;
           });
         });
-</script>
+    </script>
+
+    <script type="text/javascript">
+    
+        $(document).ready(function(){
+          $('.portfolio').on('click', function(){
+            var slug = $(this).data('proslug');
+            if (slug) {
+                $.ajax({
+                    url: "{{ url('portfolio/') }}/" + slug,
+                    type: "GET",
+                    datType: "json",
+                    success: function(data){
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            padding: '1em',
+                            width: 405,
+                            showConfirmButton: false,
+                            timer: 4200,
+                            timerProgressBar: true,
+                            onOpen: (toast) => {
+                              toast.addEventListener('mouseenter', Swal.stopTimer)
+                              toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        })
+
+                        if ($.isEmptyObject(data.error)) {
+                          Toast.fire({
+                            icon: 'success',
+                            title: data.success
+
+                          })
+                        } else {
+                           Toast.fire({
+                            icon: 'error',
+                            title: data.error
+                          })
+                        }
+
+                    },
+                });
+            } else {
+                Toast.fire({
+                  icon: 'error',
+                  title: 'Something went wrong ! Try again later.'
+                })
+            }
+            return false;
+          });
+        });
+    </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
 <script>        
     @if(Session::has('noty-success')) new Noty({ 
@@ -555,6 +609,13 @@
         }).show(); 
     @endif
 </script>
+
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#datatable').DataTable();
+        });
+    </script>
 
 </body>
 

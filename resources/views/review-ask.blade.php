@@ -72,16 +72,9 @@
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled appendSize">
-				{{-- <li><a href="#">{{ $product->category->category_name }}</a></li>
-				@if(!empty($product->subcategory)) <b> &raquo; </b> <li><a href="#">{{ $product->subcategory->subcategory_name }}</a></li>
-				@endif
-
-				@if(!empty($product->childsubcategory)) <b> &raquo; </b> <li><a href="#">{{ $product->childsubcategory->childsubcategory_name }}</a></li>
-				@endif
-
-				<b> &raquo; </b> <li class='active'>{{ $product->product_name }}</li>
-				<b> &raquo; </b> <li class='active'>{{ $probuy_attr->size }}</li> --}}
-
+				<li><a href="#">Ask</a></li>
+				<b> &raquo; </b> <li class='active'>Review</li>
+				
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -119,7 +112,7 @@
 		                        	<div class="col-md-8">
 		                        		<span style="width: 300px; margin-top: 30px !important;"><img src="{{ asset('app/uploads/product_images/main_image/large/'.$product->main_image) }}" alt=""> </span>
 		                        	</div>
-		                        <form action="{{ route('bid.store') }}" method="post">
+		                        <form action="{{ route('ask.store') }}" method="post">
 		                        	@csrf
 
 		                        	<input type="hidden" name="product_id" value="{{ $product->id }}">
@@ -127,30 +120,30 @@
 		                        	<input type="hidden" name="size" value="{{ $probuy_attr->size }}">
 
 		                        	<div class="col-md-4">
-		                        		<input type="hidden" name="bid_amount" value="{{ $bid_amount }}">
-		                        		<p style="font-size: 17px;">Bid Amount : <b>${{ $bid_amount }}</b></p>
-		                        		<p style="font-size: 17px;">Processing Fee : <b>$10.00</b></p>
-		                        		<p style="font-size: 17px;">Estimated Shipping : <b>$13.95</b></p>
+		                        		<input type="hidden" name="ask_amount" value="{{ $ask_amount }}">
+		                        		<p style="font-size: 17px;">Ask Amount : <b>${{ $ask_amount }}</b></p>
+		                        		<p style="font-size: 17px;">Transaction Fee : <b>- ${{ $transaction_fee_in }}</b></p>
+		                        		<p style="font-size: 17px;">Payment Proc. : <b>- ${{ $payment_proc_in }}</b></p>
 		                        	@if(!empty($dis_amount))
 		                        		<p style="font-size: 17px;">Coupon Code : <b style="color: rgb(2, 158, 116); font-weight: 700;">{{ $cou_code }}</b></p>
-		                        		<p style="font-size: 17px;">Coupon Discount : <b>${{ $dis_amount }}</b></p>
+		                        		<p style="font-size: 17px;">Coupon Discount : <b>+ ${{ $dis_amount }}</b></p>
 		                        	@endif
 
 		                        	@if(!empty($dis_amount))
 		                        		<?php 
-		                        			$pay_with_dis = 10.00 + 13.95 + $bid_amount - $dis_amount;
+		                        			$payout_with_dis = $total_pay + $dis_amount;
 		                        		?>
-		                        		<input type="hidden" name="total_pay" value="{{ $pay_with_dis }}">
-		                        		<hr><p style="font-size: 18px;">Total Payable Amount : <b>${{ $pay_with_dis }}</b></p>
+		                        		<input type="hidden" name="total_pay" value="{{ $payout_with_dis }}">
+		                        		<hr><p style="font-size: 18px;">Total Payable Amount : <b>${{ $payout_with_dis }}</b></p>
 		                        	@else
 		                        		<?php 
-		                        			$pay_without_dis = 10.00 + 13.95 + $bid_amount;
+		                        			$pay_without_dis = $total_pay;
 		                        		?>
 		                        		<input type="hidden" name="total_pay" value="{{ $pay_without_dis }}">
 		                        		<hr><p style="font-size: 18px;">Total Payable Amount : <b>${{ $pay_without_dis }}</b></p>
 		                        	@endif
 
-		                        		<br><button type="submit" style="width: 100%;" class="btn-upper btn btn-primary checkout-page-button">Confirm Bid</button>
+		                        		<br><button type="submit" style="width: 100%;" class="btn-upper btn btn-primary checkout-page-button">Confirm Ask</button>
 		                        	</div>
 		                        </form>
 	                        	</div>

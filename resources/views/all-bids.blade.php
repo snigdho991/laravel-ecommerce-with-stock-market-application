@@ -15,7 +15,7 @@
 			<ul class="list-inline list-unstyled">
 				<li><a href="#">Home</a></li>
 				
-				<b> &raquo; </b> <li class='active'>Following Products</li>
+				<b> &raquo; </b> <li class='active'>Bids</li>
 
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
@@ -33,7 +33,8 @@
 				<tr>
 					<th class="heading-title">Image</th>
 					<th class="heading-title">Product</th>
-					<th class="heading-title">Market Value</th>
+					<th class="heading-title">Bid Price</th>
+					<th class="heading-title">Highest Bid</th>
 					<th class="heading-title">Lowest Ask</th>
 					<th class="heading-title">Action</th>
 					
@@ -41,27 +42,35 @@
 			</thead>
 			<tbody>
 
-			@foreach ($followed_products as $followed_product)				
+			@foreach ($bids as $bid)				
 				<tr>
-					<td class="col-md-2"><img src="{{ asset('app/uploads/product_images/main_image/small/blog_big_01.jpg-45325.jpg') }}" style="height: 60px; width: 75px;" alt="image"></td>
+					<td class="col-md-2"><img src="{{ asset('app/uploads/product_images/main_image/small/'.$bid->main_image) }}" style="height: 60px; width: 75px;" alt="image"></td>
 					<td class="col-md-3">
-						<div class="product-name"><a href="#">{{ $followed_product->product_name }}</a></div>
+						<div class="product-name"><a href="{{ route('frontend.product', ['slug' => $bid->product_slug]) }}">{{ $bid->product_name }}</a>
+							<P>Size : <b>{{ $bid->size }}</b></P>
+						</div>
 						
 						
-							{{-- <span style="font-size: 14px; font-weight: 550;">Retail Price : {{ $followed_product->product_price }} USD</span> --}}
+							{{-- <span style="font-size: 14px; font-weight: 550;">Retail Price : {{ $bid->product_price }} USD</span> --}}
 							{{-- <span>$900.00</span> --}}
 						
 					</td>
-					<td class="col-md-3">
-						{{ $followed_product->product_price }} USD
+					<td class="col-md-2">
+						{{ $bid->bid_amount }} USD
 					</td>
 
 					<td class="col-md-2">
-						{{ $followed_product->product_price }} USD
+						{{ $bid->bid_amount }} USD
 					</td>
 
-					<td class="col-md-2 close-btn">
-						<a href="#" class=""><i class="fa fa-times"></i></a>
+					<td class="col-md-2">
+						{{ $bid->bid_amount }} USD
+					</td>
+
+					<td class="col-md-1">
+						{{-- <a href="" class="btn btn-info btn-sm" title="Edit"><i class="fa fa-pencil"></i> </a> --}}
+
+                      <a href="" class="btn btn-sm btn-danger" title="Delete"><i class="fa fa-trash"></i> </a>
 					</td>
 				</tr>
 			@endforeach	

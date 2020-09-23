@@ -11,6 +11,8 @@ use App\Subcategory;
 use App\ChildSubcategory;
 use App\ProductsAttribute;
 use App\FollowingProduct;
+use App\PortfolioProduct;
+use App\Ask;
 
 use Auth;
 use DB;
@@ -40,13 +42,19 @@ class FrontendProductController extends Controller
         /*dd($productattr);*/
 
         if (!empty($_GET['size'])) {
-            $size = $_GET['size'];
-            $probuy_attr = ProductsAttribute::where(['product_id' => $product->id, 'size' => $size])->first();
-            return view('buy-bid')->with('product', $product)->with('productattr', $productattr)->with('probuy_attr', $probuy_attr);
-        }/* else {
-            Session::flash('noty-error', 'Please select a size.');
-            return view('buy-bid')->with('product', $product)->with('productattr', $productattr)->with('probuy_attr', $probuy_attr);
-        }*/
+            if($_GET['action'] == 'buy-bid'){
+                $size = $_GET['size'];
+                $probuy_attr = ProductsAttribute::where(['product_id' => $product->id, 'size' => $size])->first();
+
+                $lowest_ask = Ask::where(['product_id' => $product->id, 'size' => $size, 'status' => 1])->orderBy('ask_amount', 'asc')->take(1)->get()->first();
+
+                return view('buy-bid')->with('product', $product)->with('productattr', $productattr)->with('probuy_attr', $probuy_attr)->with('lowest_ask', $lowest_ask);
+            } else if($_GET['action'] == 'sell-ask') {
+                $size = $_GET['size'];
+                $probuy_attr = ProductsAttribute::where(['product_id' => $product->id, 'size' => $size])->first();
+                return view('sell-ask')->with('product', $product)->with('productattr', $productattr)->with('probuy_attr', $probuy_attr);
+            }
+        }
 
     	return view('product-details')->with('product', $product)->with('productattr', $productattr);
 	}
@@ -98,6 +106,36 @@ class FrontendProductController extends Controller
         } 
     }
 
+    public function add_to_portfolio($slug) {
+
+        $userid = Auth::id();
+        $check =  PortfolioProduct::where('user_id',$userid)->where('product_slug',$slug)->first();
+
+        $particular_product = Product::where('product_slug', $slug)->first();
+        
+        if (Auth::check()) {
+         
+            if ($check) {
+
+                return response()->json(['error' => 'Product has been added to porfolio already !']); 
+                
+            } else {
+
+                $portfolio_pro = new PortfolioProduct();
+                $portfolio_pro->user_id      = $userid;
+                $portfolio_pro->product_slug = $slug;
+                $portfolio_pro->product_id   = $particular_product->id;
+                $portfolio_pro->save();                
+                
+                return response()->json(['success' => 'Product has been added in your portfolio list.']);
+                
+            }
+                         
+        } else {
+            return response()->json(['error' => 'Please login first to add this product in your portfolio !']);              
+        } 
+    }
+
     public function user_following_products()
     {
         $user = Auth::id();
@@ -109,6 +147,19 @@ class FrontendProductController extends Controller
                        ->get();
 
         return view('following-products')->with('followed_products', $product);
+    }
+
+    public function user_portfolio_products()
+    {
+        $user = Auth::id();
+        
+        $product = DB::table('portfolio_products')
+                       ->join('products', 'portfolio_products.product_id', 'products.id')
+                       ->select('products.*', 'portfolio_products.user_id', 'portfolio_products.created_at')
+                       ->where('portfolio_products.user_id', $user)
+                       ->get();
+
+        return view('portfolio-products')->with('portfolio_products', $product);
     }
 
     public function get_product_attributes(Request $request)

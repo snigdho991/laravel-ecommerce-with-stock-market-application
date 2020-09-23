@@ -786,7 +786,8 @@
 
 	                	// CHANGE BUY BUTTON LINK
 	                	var produslug = $("#buyBid").attr('data-produslug');
-	                	document.getElementById("buyBid").href = '/product/'+ produslug + '?size=' + resp.size;
+	                	document.getElementById("buyBid").href = '/product/'+ produslug + '?action=buy-bid&size=' + resp.size;
+	                	document.getElementById("sellAsk").href = '/product/'+ produslug + '?action=sell-ask&size=' + resp.size;
 
 	                	// ENABLE BUY-SELL BUTTON
 	                	$('#hideUnlockText').hide();
